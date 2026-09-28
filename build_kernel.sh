@@ -256,7 +256,8 @@ build_target() {
         echo "[*] Injecting AOSP specific configurations..."
         scripts/config --file "${OUT_DIR}/.config" \
             -e REKERNEL \
-            -e REKERNEL_NETWORK
+            -e REKERNEL_NETWORK \
+            -d SHADOW_CALL_STACK
     fi
 
     # We always need to re-evaluate dependencies because BBG is injected unconditionally
