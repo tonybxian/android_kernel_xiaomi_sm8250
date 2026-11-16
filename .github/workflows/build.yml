@@ -14,6 +14,7 @@ on:
         options:
           - alioth
           - lmi
+          - apollo
       ksu:
         description: 'Enable KernelSU (HyperSU)'
         required: true
